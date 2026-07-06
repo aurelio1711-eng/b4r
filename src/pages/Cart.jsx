@@ -38,6 +38,9 @@ export const Cart = () => {
       const { sessionId } = await res.json()
 
       const stripe = await getStripe()
+      if (!stripe) {
+        throw new Error('Stripe failed to initialize — missing publishable key.')
+      }
       const { error: stripeError } = await stripe.redirectToCheckout({ sessionId })
       if (stripeError) throw stripeError
     } catch (err) {
