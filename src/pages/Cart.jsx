@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
-import { getStripe } from '../utils/stripe'
 import '../styles/cart.css'
 
 const formatPrice = (cents) => `$${(cents / 100).toFixed(2)}`
@@ -35,14 +34,13 @@ export const Cart = () => {
         throw new Error(err.error || 'Checkout request failed')
       }
 
-      const { sessionId } = await res.json()
+      const { url } = await res.json()
 
-      const stripe = await getStripe()
-      if (!stripe) {
-        throw new Error('Stripe failed to initialize — missing publishable key.')
+      if (!url) {
+        throw new Error('No checkout URL returned.')
       }
-      const { error: stripeError } = await stripe.redirectToCheckout({ sessionId })
-      if (stripeError) throw stripeError
+
+      window.location.href = url
     } catch (err) {
       setError(err.message)
     } finally {
