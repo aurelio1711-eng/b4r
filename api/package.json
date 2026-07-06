@@ -1,0 +1,7 @@
+{
+  "name": "b4r-api",
+  "type": "module",
+  "dependencies": {
+    "stripe": "^17.0.0"
+  }
+}

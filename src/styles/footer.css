@@ -1,0 +1,26 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: var(--space-xl) 0;
+  margin-top: var(--space-2xl);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: var(--mid-gray);
+  letter-spacing: 0.05em;
+}
+
+.footer__tagline {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--muted-gold);
+  font-style: italic;
+}
