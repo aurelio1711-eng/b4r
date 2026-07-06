@@ -1,25 +1,38 @@
 :root {
   /* palette */
-  --black: #0a0a0a;
-  --near-black: #121212;
-  --charcoal: #1e1e1e;
-  --deep-forest: #1a2e1a;
-  --deep-teal: #0d2b2b;
-  --warm-amber: #c97b2b;
-  --soft-gold: #d4a35c;
-  --muted-gold: #a8834a;
-  --cream: #f5efe0;
-  --warm-white: #faf8f4;
-  --off-white: #e8e4dc;
-  --light-gray: #b8b4ac;
-  --mid-gray: #6b6760;
-  --pale-amber: #f0dcc0;
-  --error: #c44a4a;
-  --success: #4a9c6a;
+  --teal-primary: #0D7377;
+  --teal-deep: #095557;
+  --teal-soft: #2F8F8F;
+  --gold-soft: #E8A838;
+  --coral-accent: #E8736A;
+  --cream-bg: #FAF8F5;
+  --cream-deep: #F3EDE4;
+  --cream-muted: #EEE4D8;
+  --slate-dark: #1A1A2E;
+  --slate-soft: #5E6472;
+  --shadow-soft: rgba(9, 85, 87, 0.12);
+  --shadow-strong: rgba(9, 85, 87, 0.2);
+
+  --black: #0d1c1d;
+  --near-black: #0f2b2e;
+  --charcoal: #F7EFE5;
+  --deep-forest: #095557;
+  --deep-teal: #0D7377;
+  --warm-amber: #E8A838;
+  --soft-gold: #E8A838;
+  --muted-gold: #0D7377;
+  --cream: #FFFDF9;
+  --warm-white: #FAF8F5;
+  --off-white: #F3EDE4;
+  --light-gray: #6F7281;
+  --mid-gray: #6F7281;
+  --pale-amber: #F7E7C6;
+  --error: #E8736A;
+  --success: #0D7377;
 
   /* typography */
-  --font-serif: 'Georgia', 'Times New Roman', serif;
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Iowan Old Style', 'Palatino Linotype', serif;
+  --font-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', monospace;
 
   /* spacing */
@@ -31,8 +44,9 @@
   --space-2xl: 8rem;
 
   /* radii */
-  --radius-sm: 4px;
-  --radius-md: 8px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
 
   /* transitions */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
